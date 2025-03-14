@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ToggleTheme } from '../ui/ToggleTheme';
-import { Shield, Menu, X } from 'lucide-react';
+import { Shield, Menu, X, Home } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -42,6 +42,12 @@ export const Navbar: React.FC = () => {
 
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-8">
+            <Link
+              to="/"
+              className="text-slate-700 dark:text-slate-200 hover:text-scanner-blue-600 dark:hover:text-scanner-blue-400 transition-colors"
+            >
+              Home
+            </Link>
             <Link
               to="/features"
               className="text-slate-700 dark:text-slate-200 hover:text-scanner-blue-600 dark:hover:text-scanner-blue-400 transition-colors"
@@ -97,6 +103,13 @@ export const Navbar: React.FC = () => {
         }`}
       >
         <div className="blur-backdrop px-4 pt-2 pb-4 space-y-1 sm:px-3">
+          <Link
+            to="/"
+            className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-scanner-blue-600 dark:hover:text-scanner-blue-400"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Home
+          </Link>
           <Link
             to="/features"
             className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-scanner-blue-600 dark:hover:text-scanner-blue-400"
