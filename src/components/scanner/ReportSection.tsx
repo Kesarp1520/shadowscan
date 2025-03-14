@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { FileJson, FilePdf, Share, Download, Mail } from 'lucide-react';
+import { FileJson, FileText, Share, Download, Mail } from 'lucide-react';
 import { useScan } from '../../context/ScanContext';
 import { Button } from '../ui/button';
 
@@ -67,7 +67,7 @@ export const ReportSection: React.FC = () => {
                     onChange={() => setReportFormat('pdf')}
                   />
                   <span className="text-slate-700 dark:text-slate-300 flex items-center">
-                    <FilePdf className="mr-1 h-4 w-4" /> PDF
+                    <FileText className="mr-1 h-4 w-4" /> PDF
                   </span>
                 </label>
                 

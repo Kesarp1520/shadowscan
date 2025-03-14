@@ -90,7 +90,7 @@ export const Hero: React.FC = () => {
                     </div>
                     <div className="flex">
                       <span className="text-slate-500 dark:text-slate-500 w-8">2</span>
-                      <span className="text-slate-800 dark:text-slate-300">&nbsp;&nbsp;const query = <span className="text-green-600 dark:text-green-400">`SELECT * FROM users WHERE id = ${user.id}`</span>;</span>
+                      <span className="text-slate-800 dark:text-slate-300">&nbsp;&nbsp;const query = <span className="text-green-600 dark:text-green-400">`SELECT * FROM users WHERE id = ${'${userId}'}`</span>;</span>
                     </div>
                     <div className="flex bg-red-100 dark:bg-red-900/20">
                       <span className="text-slate-500 dark:text-slate-500 w-8">3</span>
