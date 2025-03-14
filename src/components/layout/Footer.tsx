@@ -71,9 +71,9 @@ export const Footer: React.FC = () => {
             </h3>
             <ul className="mt-4 space-y-2">
               <li>
-                <Link to="/documentation" className="text-sm text-slate-600 dark:text-slate-400 hover:text-scanner-blue-600 dark:hover:text-scanner-blue-400 transition-colors">
+                <a href="#" className="text-sm text-slate-600 dark:text-slate-400 hover:text-scanner-blue-600 dark:hover:text-scanner-blue-400 transition-colors">
                   Documentation
-                </Link>
+                </a>
               </li>
               <li>
                 <Link to="/faq" className="text-sm text-slate-600 dark:text-slate-400 hover:text-scanner-blue-600 dark:hover:text-scanner-blue-400 transition-colors">
