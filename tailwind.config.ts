@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,6 +19,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Inter var', 'Inter', 'sans-serif'],
+				display: ['SF Pro Display', 'Inter', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,7 +66,26 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+        scanner: {
+          blue: {
+            50: '#F0F7FF',
+            100: '#E0EFFF',
+            200: '#B8DBFF',
+            300: '#8FC7FF',
+            400: '#66B3FF',
+            500: '#3D9FFF',
+            600: '#148AFF',
+            700: '#0070E0',
+            800: '#0057AD',
+            900: '#003F7A',
+          },
+          severity: {
+            high: '#FF4A5F',
+            medium: '#FFA14A',
+            low: '#36D399',
+          }
+        },
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,12 +108,66 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+        'fade-in': {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' }
+        },
+        'fade-out': {
+          '0%': { opacity: '1' },
+          '100%': { opacity: '0' }
+        },
+        'slide-up': {
+          '0%': { transform: 'translateY(20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' }
+        },
+        'slide-down': {
+          '0%': { transform: 'translateY(-20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' }
+        },
+        'loading-dots': {
+          '0%': { opacity: '0.2' },
+          '20%': { opacity: '1' },
+          '100%': { opacity: '0.2' }
+        },
+        'pulse': {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.5' }
+        },
+        'float': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' }
+        },
+        'scanning': {
+          '0%': { transform: 'translateY(0)', opacity: '0' },
+          '50%': { transform: 'translateY(-20px)', opacity: '1' },
+          '100%': { transform: 'translateY(-40px)', opacity: '0' }
+        }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+        'fade-in': 'fade-in 0.3s ease-out forwards',
+        'fade-out': 'fade-out 0.3s ease-out forwards',
+        'slide-up': 'slide-up 0.4s ease-out forwards',
+        'slide-down': 'slide-down 0.4s ease-out forwards',
+        'loading-dots': 'loading-dots 1.4s infinite ease-in-out',
+        'loading-dots-2': 'loading-dots 1.4s 0.2s infinite ease-in-out',
+        'loading-dots-3': 'loading-dots 1.4s 0.4s infinite ease-in-out',
+        'pulse': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'float': 'float 3s ease-in-out infinite',
+        'scanning': 'scanning 1.5s infinite linear'
+			},
+      boxShadow: {
+        'glass': '0 4px 20px 0 rgba(0, 0, 0, 0.1)',
+        'glass-hover': '0 10px 30px 0 rgba(0, 0, 0, 0.15)',
+        'code': '0 2px 10px rgba(0, 0, 0, 0.1)',
+        'card': '0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02)',
+      },
+      backgroundImage: {
+        'blue-gradient': 'linear-gradient(to right, #1a365d, #2563eb)',
+        'subtle-gradient': 'linear-gradient(to bottom right, rgba(59, 130, 246, 0.05), rgba(37, 99, 235, 0.1))',
+      },
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
