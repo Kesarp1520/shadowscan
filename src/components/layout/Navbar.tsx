@@ -1,5 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { ToggleTheme } from '../ui/ToggleTheme';
 import { Shield, Menu, X } from 'lucide-react';
 
@@ -31,40 +32,40 @@ export const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <a href="/" className="flex items-center space-x-2">
+            <Link to="/" className="flex items-center space-x-2">
               <Shield className="h-8 w-8 text-scanner-blue-600 dark:text-scanner-blue-400" />
               <span className="text-xl font-semibold text-slate-900 dark:text-white tracking-tight">
                 SHADOWSCAN
               </span>
-            </a>
+            </Link>
           </div>
 
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <a
-              href="#features"
+            <Link
+              to="/features"
               className="text-slate-700 dark:text-slate-200 hover:text-scanner-blue-600 dark:hover:text-scanner-blue-400 transition-colors"
             >
               Features
-            </a>
-            <a
-              href="#scanner"
+            </Link>
+            <Link
+              to="/scanner"
               className="text-slate-700 dark:text-slate-200 hover:text-scanner-blue-600 dark:hover:text-scanner-blue-400 transition-colors"
             >
               Scanner
-            </a>
-            <a
-              href="#faq"
+            </Link>
+            <Link
+              to="/faq"
               className="text-slate-700 dark:text-slate-200 hover:text-scanner-blue-600 dark:hover:text-scanner-blue-400 transition-colors"
             >
               FAQ
-            </a>
-            <a
-              href="#demo"
+            </Link>
+            <Link
+              to="/demo"
               className="inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-scanner-blue-600 hover:bg-scanner-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-scanner-blue-500"
             >
               Start Demo
-            </a>
+            </Link>
             <ToggleTheme />
           </div>
 
@@ -96,34 +97,34 @@ export const Navbar: React.FC = () => {
         }`}
       >
         <div className="blur-backdrop px-4 pt-2 pb-4 space-y-1 sm:px-3">
-          <a
-            href="#features"
+          <Link
+            to="/features"
             className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-scanner-blue-600 dark:hover:text-scanner-blue-400"
             onClick={() => setMobileMenuOpen(false)}
           >
             Features
-          </a>
-          <a
-            href="#scanner"
+          </Link>
+          <Link
+            to="/scanner"
             className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-scanner-blue-600 dark:hover:text-scanner-blue-400"
             onClick={() => setMobileMenuOpen(false)}
           >
             Scanner
-          </a>
-          <a
-            href="#faq"
+          </Link>
+          <Link
+            to="/faq"
             className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-scanner-blue-600 dark:hover:text-scanner-blue-400"
             onClick={() => setMobileMenuOpen(false)}
           >
             FAQ
-          </a>
-          <a
-            href="#demo"
+          </Link>
+          <Link
+            to="/demo"
             className="block px-3 py-2 rounded-md text-base font-medium text-white bg-scanner-blue-600 hover:bg-scanner-blue-700"
             onClick={() => setMobileMenuOpen(false)}
           >
             Start Demo
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

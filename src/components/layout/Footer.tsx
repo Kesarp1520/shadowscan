@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Shield, Github, Twitter, Mail } from 'lucide-react';
 
 export const Footer: React.FC = () => {
@@ -41,14 +42,14 @@ export const Footer: React.FC = () => {
             </h3>
             <ul className="mt-4 space-y-2">
               <li>
-                <a href="#features" className="text-sm text-slate-600 dark:text-slate-400 hover:text-scanner-blue-600 dark:hover:text-scanner-blue-400 transition-colors">
+                <Link to="/features" className="text-sm text-slate-600 dark:text-slate-400 hover:text-scanner-blue-600 dark:hover:text-scanner-blue-400 transition-colors">
                   Features
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#scanner" className="text-sm text-slate-600 dark:text-slate-400 hover:text-scanner-blue-600 dark:hover:text-scanner-blue-400 transition-colors">
+                <Link to="/scanner" className="text-sm text-slate-600 dark:text-slate-400 hover:text-scanner-blue-600 dark:hover:text-scanner-blue-400 transition-colors">
                   Scanner
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#" className="text-sm text-slate-600 dark:text-slate-400 hover:text-scanner-blue-600 dark:hover:text-scanner-blue-400 transition-colors">
@@ -75,9 +76,9 @@ export const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="#faq" className="text-sm text-slate-600 dark:text-slate-400 hover:text-scanner-blue-600 dark:hover:text-scanner-blue-400 transition-colors">
+                <Link to="/faq" className="text-sm text-slate-600 dark:text-slate-400 hover:text-scanner-blue-600 dark:hover:text-scanner-blue-400 transition-colors">
                   FAQ
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#" className="text-sm text-slate-600 dark:text-slate-400 hover:text-scanner-blue-600 dark:hover:text-scanner-blue-400 transition-colors">
