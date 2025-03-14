@@ -185,7 +185,7 @@ const Demo = () => {
                           <pre className="text-slate-800 dark:text-slate-300">
                             <div className="flex">
                               <span className="text-slate-500 dark:text-slate-500 w-8">1</span>
-                              <span className="text-slate-800 dark:text-slate-300">app.get('/profile', (req, res) => {'{'}</span>
+                              <span className="text-slate-800 dark:text-slate-300">app.get('/profile', (req, res) {'=>'} {'{'}</span>
                             </div>
                             <div className="flex">
                               <span className="text-slate-500 dark:text-slate-500 w-8">2</span>
@@ -197,7 +197,7 @@ const Demo = () => {
                             </div>
                             <div className="flex bg-red-100 dark:bg-red-900/20">
                               <span className="text-slate-500 dark:text-slate-500 w-8">4</span>
-                              <span className="text-slate-800 dark:text-slate-300">&nbsp;&nbsp;getUserProfile(userId).then(profile => {'{'}</span>
+                              <span className="text-slate-800 dark:text-slate-300">&nbsp;&nbsp;getUserProfile(userId).then(profile {'=>'} {'{'}</span>
                             </div>
                             <div className="flex">
                               <span className="text-slate-500 dark:text-slate-500 w-8">5</span>
@@ -231,7 +231,7 @@ const Demo = () => {
                           <pre className="text-slate-800 dark:text-slate-300">
                             <div className="flex">
                               <span className="text-slate-500 dark:text-slate-500 w-8">1</span>
-                              <span className="text-slate-800 dark:text-slate-300">app.get('/profile', authenticate, (req, res) => {'{'}</span>
+                              <span className="text-slate-800 dark:text-slate-300">app.get('/profile', authenticate, (req, res) {'=>'} {'{'}</span>
                             </div>
                             <div className="flex">
                               <span className="text-slate-500 dark:text-slate-500 w-8">2</span>
@@ -255,7 +255,7 @@ const Demo = () => {
                             </div>
                             <div className="flex">
                               <span className="text-slate-500 dark:text-slate-500 w-8">7</span>
-                              <span className="text-slate-800 dark:text-slate-300">&nbsp;&nbsp;getUserProfile(userId).then(profile => {'{'}</span>
+                              <span className="text-slate-800 dark:text-slate-300">&nbsp;&nbsp;getUserProfile(userId).then(profile {'=>'} {'{'}</span>
                             </div>
                             <div className="flex">
                               <span className="text-slate-500 dark:text-slate-500 w-8">8</span>
